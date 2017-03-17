@@ -63,17 +63,29 @@ a:hover {
     background-size: cover;
     background-position: right;
     margin: 0;
-    padding: 0;
-    height: 80vh;
+    padding: 200px;
     color: #fff;
 }
 .home-top h1 {
+  padding-top: 40px;
   font-size: 54px;
-  padding-top: 200px;
+  margin-bottom: 0;
+}
+.home-top img {
+  max-width: 80%;
 }
 .home-top p {
   font-size: 32px;
   padding: 30px;
+}
+.home-top button {
+  width: 200px;
+  outline: #fff solid 2px;
+}
+.home-top button a {
+  color: #fff !important;
+  font-size: 1.6em;
+  font-weight: 700;
 }
 .home-tile {
   width: 50%;
@@ -170,7 +182,7 @@ button:focus {
 }
 .facility h3,
 .facility p {
-  padding-left: 40px;
+  padding-left: 70px;
 }
 #about-certs {
   display: flex;
@@ -187,6 +199,12 @@ button:focus {
   padding: 0;
   margin: 0;
 }
+#about-certs ul {
+  list-style-type: none;
+}
+#about-certs li {
+  padding-left: 30px;
+}
 #certs-img {
   width: 100%;
   background-color: #e7e7e7;
@@ -201,12 +219,6 @@ button:focus {
 #valtam {
   background-color: #e7e7e7;
 }
-#capabilities-top {
-  height: 27vh;
-}
-#capabilities-text {
-  height: 27vh;
-}
 #capabilities-top h1,
 #engineering-text h1 {
   padding-top: 45px;
@@ -216,8 +228,8 @@ button:focus {
 #capabilities-top p {
   padding: 0 100px 0 100px;
 }
-.last-p {
-  margin: 0;
+#capabilities-text {
+  padding-bottom: 50px;
 }
 #logistics,
 #engineering {
@@ -279,9 +291,10 @@ button:focus {
 }
 #contact-info {
   padding: 15px;
-  height: 14vh;
   color: #fff;
   background-color: #333;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
 }
 #contact-info p {
   line-height: 0.6;
