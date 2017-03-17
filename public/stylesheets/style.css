@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Cinzel:400,700|Lato:400,700');
+
 body {
+  width: 100%;
   position: absolute;
-  top: 70px;
+  top: 30px;
   padding: 0;
   margin: 0;
   font: 14px 'Lato', Helvetica, Arial, sans-serif;
+  color: #333;
 }
 h1, h2, h3 {
-  font-family: 'Cinzel', serif;
+  font-family: "trajan-pro-3",serif;
   font-weight: 700;
 }
 a {
@@ -27,35 +29,23 @@ a:hover {
   height: 70px;
   width: 100%;
   background-color: #e7e7e7;
+  -webkit-box-shadow: inset 0px -5px 50px -20px rgba(51,51,51,1);
+  -moz-box-shadow: inset 0px -5px 50px -20px rgba(51,51,51,1);
+  box-shadow: inset 0px -5px 50px -20px rgba(51,51,51,1);
   position: fixed;
   top: 0;
 }
-#header img {
+.shield {
   position: absolute;
   top: 10px;
   left: 10px;
-  max-width: 60px;
+  max-width: 60px
 }
-#header h1 {
+.logo-text {
   position: absolute;
+  top: 20px;
   left: 70px;
-  font-size: 2em;
-  text-transform: uppercase;
-  line-height: 0.75;
-  color: #7d0005;
-}
-#first {
-  top: 10px;
-  letter-spacing: 1.7px;
-}
-#second {
-  top: 18px;
-}
-h1 span {
-  color: #333333;
-}
-#big {
-  font-size: 1.7em;
+  max-width: 105px;
 }
 #header-nav {
   position: absolute;
@@ -66,4 +56,238 @@ h1 span {
 }
 #header-nav li {
   float: left;
+}
+.home-top {
+    text-align: center;
+    background-image: url(../images/main.jpg);
+    background-size: cover;
+    background-position: right;
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+    color: #fff;
+}
+.home-top h1 {
+  font-size: 54px;
+  padding-top: 200px;
+}
+.home-top p {
+  font-size: 32px;
+  padding: 30px;
+}
+.home-tile {
+  width: 50%;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: #231F20;
+  padding: 40px 0 40px 0;
+}
+.home-tile h1 {
+  font-size: 32px;
+}
+.home-tile p {
+  font-size: 1.6em;
+  font-weight: 700;
+}
+#one {
+  background-image: url('../images/plane.jpg')
+}
+#two {
+  background-image: url('../images/reset-button.jpg');
+}
+#three {
+  background-image: url('../images/engineering-gears.jpg')
+}
+#four {
+  background-image: url('../images/training.jpg');
+}
+#home-slice {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.0);
+  border-radius: 2%;
+  outline: #231F20 solid 2px;
+}
+button a,
+button a:visited {
+  color: #231F20;
+  text-decoration: none;
+}
+button:hover,
+button:active,
+button:focus {
+  background-color: #00B7FF;
+}
+#about-top {
+  -webkit-box-shadow: inset 0px 17px 90px -20px rgba(51,51,51,1);
+  -moz-box-shadow: inset 0px 17px 90px -20px rgba(51,51,51,1);
+  box-shadow: inset 0px 17px 90px -20px rgba(51,51,51,1);
+  background-color: #ffffff;
+}
+#about-top h1 {
+  text-align: center;
+  padding: 40px 20px 20px 20px;
+  font-size: 2.6em;
+}
+#about-top p {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+#about-top button {
+  width: 200px;
+  margin-left: calc(50% - 100px);
+  margin-bottom: 50px;
+}
+#about-top button:hover,
+#about-top button:active,
+#about-top button:focus {
+  background-color: #00B7FF;
+}
+#about-facilities {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-image: url('/images/hangar.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+#about-facilities h1 {
+  width: 100%;
+  text-align: center;
+}
+.facility {
+  width: 33%;
+}
+.facility h3,
+.facility p {
+  padding-left: 40px;
+}
+#about-certs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#about-certs h2 {
+  font-size: 32px;
+  text-align: center;
+}
+#certifications,
+#about-awards {
+  width: 50%;
+  padding: 0;
+  margin: 0;
+}
+#certs-img {
+  width: 100%;
+  background-color: #e7e7e7;
+}
+#certs-img img {
+  width: 30%;
+  padding: 20px 35% 20px 35%;
+}
+#capabilities-top,
+#logistics-container,
+#engineering-container,
+#valtam {
+  background-color: #e7e7e7;
+}
+#capabilities-top {
+  height: 27vh;
+}
+#capabilities-text {
+  height: 27vh;
+}
+#capabilities-top h1,
+#engineering-text h1 {
+  padding-top: 45px;
+  text-align: center;
+  font-size: 2.6em;
+}
+#capabilities-top p {
+  padding: 0 100px 0 100px;
+}
+.last-p {
+  margin: 0;
+}
+#logistics,
+#engineering {
+  width: 70%;
+  padding: 0 15% 0 15%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #e7e7e7;
+}
+#logistics-text,
+#engineering-text {
+  background-color: #fff;
+  padding: 0;
+  width: 50%;
+}
+#logistics h1 {
+  text-align: center;
+}
+#logistics h1,
+#logistics p,
+#engineering h1 {
+  padding: 40px 10% 0 10%;
+}
+#engineering-text p {
+  padding: 0 10% 0 10%;
+}
+#logistics-img {
+  background-image: url('../images/logistics.jpg');
+}
+#engineering-img {
+  background-image: url('../images/helicopter.jpg');
+}
+#logistics-img,
+#engineering-img {
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+}
+#capabilities-text,
+#valtam-text {
+  background-color: #fff;
+  width: 70%;
+  margin: 0 15% 0 15%;
+}
+#valtam-text p {
+  padding: 0 15% 0 15%;
+}
+#valtam-text p:last-child {
+  padding-bottom: 30px;
+}
+#valtam img {
+  max-width: 50%;
+  margin: 30px 25px 10px 25%;
+}
+#footer {
+  padding: 0;
+  margin: 0;
+  background-color: #7d0005;
+}
+#contact-info {
+  padding: 15px;
+  height: 14vh;
+  color: #fff;
+  background-color: #333;
+}
+#contact-info p {
+  line-height: 0.6;
+}
+#copyright {
+  text-align: center;
+  padding: 10px;
+  color: #e7e7e7;
 }
